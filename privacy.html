@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curryboy YouTube Analytics의 Google 데이터 접근, 보관, 분석, 공유 및 삭제에 관한 방침.">
+  <title>개인정보처리방침 · Curryboy YouTube Analytics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 이동</a>
+<header class="shell"><a class="brand" href="index.html">CURRYBOY <span>TOOLS</span></a><nav aria-label="주 메뉴"><a href="index.html">앱 소개</a><a href="privacy.html" aria-current="page">개인정보처리방침</a></nav></header>
+<main id="main" class="shell policy">
+  <p class="effective">시행일 2026-10-24 · 운영자 직접 관리</p>
+  <p class="eyebrow">Curryboy YouTube Analytics</p>
+  <h1>개인정보<br>처리방침</h1>
+  <p class="lead">어떤 데이터를 읽고,<br>어떻게 사용하는지 설명합니다.</p>
+  <p>운영 주체는 커리보이 채널 운영자입니다. 이 방침은 운영자 자신의 채널을 위한 로컬 수집 도구와 이 도구를 소개하는 정적 웹페이지에 적용됩니다. 문의 및 삭제 요청: <a href="mailto:k.curryboy@gmail.com">k.curryboy@gmail.com</a>.</p>
+  <section class="section" aria-labelledby="data"><h2 id="data">1. 접근하고 수집하는 데이터</h2><p>도구는 YouTube API Services를 사용합니다. Google OAuth 동의를 통해 <code>youtube.readonly</code>와 <code>yt-analytics.readonly</code> 권한을 요청합니다.</p><ul><li>채널·영상 ID, 제목, 공개 시각, 길이, 공개 상태, 업로드 인벤토리 및 현재 조회수·좋아요 수·댓글 수 등 API 제공 통계</li><li>요청한 기간의 조회수, 유효 조회수, 시청 시간, 평균 시청 지속 시간·비율, 구독자 증가·감소 활동</li><li>재접속에 필요한 OAuth 토큰·갱신 토큰, 요청 기간·조회 시각·수집 완료 여부 및 원본 API 응답</li></ul><p>업로드 목록을 점검할 때 API가 반환하는 비공개·일부공개 영상의 메타데이터와 현재 통계도 로컬 인벤토리와 원본 응답에 포함될 수 있습니다. 공개 후 성과 점검 대상은 그중 공개 영상으로 제한합니다.</p><p>시청자 개인의 신원 목록을 수집하지 않습니다. Google 비밀번호를 요청하거나 저장하지 않습니다. 업로드·수정·삭제 권한을 요청하지 않습니다.</p></section>
+  <section class="section" aria-labelledby="use"><h2 id="use">2. 이용 목적</h2><p>승인한 채널을 확인하고, 공개 후 3일·7일·28일 또는 운영자가 요청한 기간의 성과를 기록하며, 다음 영상의 기획·편집을 검토하는 데 사용합니다. 수집 당시의 기간과 조회 시각을 함께 기록해 과거 통계와 현재 통계를 구분합니다.</p></section>
+  <section class="section" aria-labelledby="storage"><h2 id="storage">3. 보관 및 보호</h2><p>토큰, 원본 응답, 표·보고서는 운영자의 로컬 컴퓨터에 파일로 저장합니다. 인증 파일에는 제한된 로컬 파일 권한을 적용하며, 일반 실행 로그에는 비밀 값과 Google 오류 원문을 출력하지 않습니다. 이 공개 안내 페이지에 인증정보나 채널의 비공개 통계를 포함하지 않습니다.</p></section>
+  <section class="section" aria-labelledby="sharing"><h2 id="sharing">4. 외부 처리 및 AI 분석</h2><p>자동 수집기는 인증·갱신·조회에 필요한 요청을 Google에 전송합니다. 매일 예약 수집 스크립트 자체는 AI API를 호출하지 않습니다.</p><p>운영자가 Codex를 통한 분석을 명시적으로 요청하면 선택한 영상 제목, 기간별 지표, 보고서 일부가 OpenAI 서비스에서 처리될 수 있습니다. 이 경우 <a href="https://openai.com/policies/privacy-policy/">OpenAI 개인정보처리방침</a>과 해당 계정의 데이터 설정이 적용됩니다. OAuth 인증정보는 분석 자료에 포함하지 않습니다.</p><p>운영자는 이 데이터를 판매하거나 광고 대상으로 사용하지 않습니다. 수집 도구에는 범용 AI 모델 학습 기능이 없습니다. 외부 AI 서비스의 보관·학습 여부는 해당 서비스와 계정 설정에 따르며, 이 도구가 일괄 보장하지 않습니다.</p></section>
+  <section class="section" aria-labelledby="retention"><h2 id="retention">5. 보관 기간과 정기 확인 <span class="manual">운영자 수동 처리</span></h2><p>운영자는 연결 권한을 매주 확인하고, 영상의 존재 여부와 저장 데이터의 갱신·삭제 필요성을 적어도 30일마다 확인합니다. 채널 소유자의 유효한 승인이 유지되고 성과 비교에 필요한 과거 통계만 계속 보관합니다. 제목 등 기타 메타데이터는 30일 이내에 갱신하거나 삭제합니다. 목적이 끝나거나 불필요해진 자료는 삭제합니다.</p><p>현재 수집 코드에는 자동 보관 만료·일괄 삭제 기능이 없습니다. 정기 점검과 삭제는 운영자가 수동으로 수행합니다.</p></section>
+  <section class="section" aria-labelledby="deletion"><h2 id="deletion">6. 연결 철회 및 데이터 삭제 <span class="manual">운영자 수동 처리</span></h2><p><a href="https://security.google.com/settings/security/permissions">Google 계정의 연결된 앱 관리</a>에서 이 도구의 접근 권한을 철회할 수 있습니다. 철회하면 이후의 승인된 접근을 중단할 수 있지만, 이미 저장한 로컬 파일이 그 조작만으로 삭제되지는 않습니다.</p><p>로컬 자료 삭제는 <a href="mailto:k.curryboy@gmail.com">k.curryboy@gmail.com</a>으로 요청할 수 있습니다. 운영자는 본인 요청을 확인한 뒤 지체 없이, 늦어도 요청 후 7일 이내에 해당 토큰, 원본 응답, 파생 표·보고서 및 관리하는 사본·백업에서 관련 데이터를 삭제합니다. Google 설정에서 철회하거나 갱신 불가 상태가 확인된 경우에도 수집을 중단하고 같은 삭제 절차를 적용합니다.</p><p>이 절차는 운영자가 수동으로 처리하며, 자동 삭제 기능은 없습니다. 이 도구의 로컬 자료를 삭제해도 YouTube에 있는 원본 영상과 채널 데이터는 삭제되지 않습니다.</p></section>
+  <section class="section" aria-labelledby="website"><h2 id="website">7. 이 안내 웹페이지</h2><p>정적 HTML과 CSS로 구성되며, 로그인·입력 폼·광고·분석 스크립트·외부 영상 삽입·자체 쿠키를 사용하지 않습니다. 외부 링크를 누르면 각 서비스의 방침이 적용됩니다.</p><p>이 안내 사이트를 호스팅하는 GitHub Pages는 보안을 위해 방문자의 IP 주소를 기록합니다. 세부 내용은 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 참고해 주세요.</p></section>
+  <section class="section" aria-labelledby="changes"><h2 id="changes">8. 변경 및 관련 정책</h2><p>접근 항목·이용 목적·외부 처리 방식이 달라지면 이 페이지를 갱신하고, 필요한 경우 새 동의를 받습니다. 변경된 방침에는 시행일을 표시합니다.</p><p><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> · <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a> · <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a></p><p>이 도구의 Google 데이터 이용 및 전송에는 Google API 서비스 사용자 데이터 정책과 제한적 사용(Limited Use) 요구사항이 적용됩니다.</p></section>
+</main>
+<footer class="shell"><a href="index.html">앱 소개로 돌아가기</a><a href="mailto:k.curryboy@gmail.com">문의</a></footer>
+</body>
+</html>

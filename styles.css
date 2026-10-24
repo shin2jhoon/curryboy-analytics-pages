@@ -1,0 +1,39 @@
+/* Dependency-free public information pages. */
+:root{color-scheme:light;--paper:#f7f4eb;--ink:#192932;--muted:#53616a;--line:#cccfc7;--accent:#854016;--soft:#f0e3ce}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.85 system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:.22em}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.shell{width:min(100% - 48px,980px);margin-inline:auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:26px;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;letter-spacing:.04em;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--accent);font-size:.7em;letter-spacing:.14em;margin-left:8px}
+nav{display:flex;flex-wrap:wrap;gap:22px;font-size:.85rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a[aria-current]{color:var(--ink);text-decoration:underline}
+.effective{border-left:3px solid var(--accent);padding:12px 16px;background:var(--soft);font-size:.84rem;line-height:1.7;margin-block:28px 0}
+.hero{padding-block:52px 70px;max-width:770px}
+.eyebrow{font-size:.76rem;font-weight:750;letter-spacing:.13em;color:var(--accent);margin:0 0 18px}
+h1{font-size:clamp(2.5rem,7.2vw,4.9rem);line-height:1.12;letter-spacing:-.055em;margin:0 0 30px;font-weight:780}
+h2{font-size:clamp(1.35rem,3.5vw,1.85rem);line-height:1.5;letter-spacing:-.035em;margin:0 0 20px}
+p{margin:0 0 20px}
+.lead{font-size:clamp(1.35rem,3.3vw,1.9rem);line-height:1.6;letter-spacing:-.025em;margin-bottom:26px}
+.button{display:inline-flex;align-items:center;gap:30px;margin-top:10px;padding:12px 20px;border:1px solid var(--accent);text-decoration:none;font-weight:650}
+.section{border-top:1px solid var(--line);padding-block:38px;max-width:800px}
+.section:last-child{padding-bottom:56px}
+.permissions{margin:0 0 25px}
+.permissions div{display:grid;grid-template-columns:225px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+dd{margin:0;color:var(--muted)}
+code{font: .9em/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
+.small{font-size:.86rem;color:var(--muted)}
+.policy{max-width:800px}
+.policy>.eyebrow{margin-top:50px}
+.policy h1{font-size:clamp(2.7rem,7vw,4.2rem)}
+.policy ul{padding-left:1.35em;margin:0 0 20px}
+.policy li{margin-block:9px}
+.manual{display:inline-block;font-size:.72rem;font-weight:500;letter-spacing:0;color:var(--accent);padding:2px 8px;border:1px solid var(--line);vertical-align:middle}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-block:25px 35px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+.skip{position:absolute;left:12px;top:-100px;padding:8px 14px;background:var(--paper);z-index:2}
+.skip:focus{top:12px}
+@media(max-width:600px){.shell{width:calc(100% - 36px)}header{align-items:flex-start;flex-direction:column;gap:12px;padding-block:20px}nav{gap:18px}.hero{padding-block:38px 48px}.section{padding-block:28px}.permissions div{grid-template-columns:1fr;gap:4px}.policy>.eyebrow{margin-top:35px}.effective{padding:10px 12px}}
+@media print{body{background:white;color:black;font-size:11pt}.shell{width:100%}nav,.button,.skip{display:none}h1{font-size:28pt}.section{break-inside:avoid}.effective{border:1px solid #999}.hero{padding-block:25px}}
